@@ -1,0 +1,27 @@
+2025-11-26 14:09:19,387 [INFO] \U0001f680 Starting ETL pipeline (run_id=20251126_140919)
+2025-11-26 14:09:19,387 [INFO] === Running: dbt run ===
+2025-11-26 14:09:19,390 [INFO] Command: dbt run
+2025-11-26 14:09:29,565 [INFO] \u2705 dbt run completed in 10.18 seconds
+2025-11-26 14:09:29,565 [INFO] === Running: dbt test ===
+2025-11-26 14:09:29,565 [INFO] Command: dbt test
+2025-11-26 14:09:38,673 [INFO] \u2705 dbt test completed in 9.10 seconds
+2025-11-26 14:09:38,673 [INFO] === Running: GE validation: src_orders ===
+2025-11-26 14:09:38,673 [INFO] Command: C:\Users\samhi\etl_automation_mysql\venv\Scripts\python.exe run_ge_src_orders.py
+2025-11-26 14:09:51,251 [INFO] \u2705 GE validation: src_orders completed in 12.58 seconds
+2025-11-26 14:09:51,251 [INFO] === Running: GE validation: stg_orders ===
+2025-11-26 14:09:51,251 [INFO] Command: C:\Users\samhi\etl_automation_mysql\venv\Scripts\python.exe run_ge_stg_orders.py
+2025-11-26 14:10:01,121 [INFO] \u2705 GE validation: stg_orders completed in 9.87 seconds
+2025-11-26 14:10:01,121 [INFO] === Running: GE validation: fct_orders_summary ===
+2025-11-26 14:10:01,121 [INFO] Command: C:\Users\samhi\etl_automation_mysql\venv\Scripts\python.exe run_ge_fct_orders_summary.py
+2025-11-26 14:10:11,016 [INFO] \u2705 GE validation: fct_orders_summary completed in 9.89 seconds
+2025-11-26 14:10:11,063 [INFO] DQ Scorecard: {'src_orders': {'status': 'PASS', 'row_count': 4, 'null_customer_id': 0, 'negative_amount_rows': 0}, 'stg_orders': {'status': 'PASS', 'row_count': 4, 'null_customer_id': 0, 'negative_amount_rows': 0}, 'fct_orders_summary': {'status': 'PASS', 'row_count': 3, 'null_customer_id': None, 'negative_amount_rows': 0}}
+2025-11-26 14:10:11,063 [INFO] Total pipeline time: 51.67 seconds
+2025-11-26 14:10:11,068 [INFO] Performance metrics saved to C:\Users\samhi\etl_automation_mysql\reports\performance_metrics_20251126_141011.json and C:\Users\samhi\etl_automation_mysql\reports\performance_metrics_latest.json
+2025-11-26 14:10:11,068 [INFO] === Performance summary ===
+2025-11-26 14:10:11,069 [INFO]   dbt_run              : 10.18 s
+2025-11-26 14:10:11,069 [INFO]   dbt_test             : 9.10 s
+2025-11-26 14:10:11,069 [INFO]   ge_src_orders        : 12.58 s
+2025-11-26 14:10:11,069 [INFO]   ge_stg_orders        : 9.87 s
+2025-11-26 14:10:11,069 [INFO]   ge_fct_orders        : 9.89 s
+2025-11-26 14:10:11,069 [INFO]   total_pipeline       : 51.67 s
+2025-11-26 14:10:11,070 [INFO] \U0001f389 Pipeline completed successfully (status=True).

@@ -1,0 +1,27 @@
+2025-11-26 14:18:49,657 [INFO] \U0001f680 Starting ETL pipeline (run_id=20251126_141849)
+2025-11-26 14:18:49,657 [INFO] === Running: dbt run ===
+2025-11-26 14:18:49,657 [INFO] Command: dbt run
+2025-11-26 14:19:00,146 [INFO] \u2705 dbt run completed in 10.49 seconds
+2025-11-26 14:19:00,146 [INFO] === Running: dbt test ===
+2025-11-26 14:19:00,147 [INFO] Command: dbt test
+2025-11-26 14:19:11,446 [INFO] \u2705 dbt test completed in 11.30 seconds
+2025-11-26 14:19:11,446 [INFO] === Running: GE validation: src_orders ===
+2025-11-26 14:19:11,446 [INFO] Command: C:\Users\samhi\etl_automation_mysql\venv\Scripts\python.exe run_ge_src_orders.py
+2025-11-26 14:19:23,993 [INFO] \u2705 GE validation: src_orders completed in 12.55 seconds
+2025-11-26 14:19:24,006 [INFO] === Running: GE validation: stg_orders ===
+2025-11-26 14:19:24,006 [INFO] Command: C:\Users\samhi\etl_automation_mysql\venv\Scripts\python.exe run_ge_stg_orders.py
+2025-11-26 14:19:35,792 [INFO] \u2705 GE validation: stg_orders completed in 11.79 seconds
+2025-11-26 14:19:35,792 [INFO] === Running: GE validation: fct_orders_summary ===
+2025-11-26 14:19:35,792 [INFO] Command: C:\Users\samhi\etl_automation_mysql\venv\Scripts\python.exe run_ge_fct_orders_summary.py
+2025-11-26 14:19:48,421 [INFO] \u2705 GE validation: fct_orders_summary completed in 12.62 seconds
+2025-11-26 14:19:48,469 [INFO] DQ Scorecard: {'src_orders': {'status': 'PASS', 'row_count': 4, 'null_customer_id': 0, 'negative_amount_rows': 0}, 'stg_orders': {'status': 'PASS', 'row_count': 4, 'null_customer_id': 0, 'negative_amount_rows': 0}, 'fct_orders_summary': {'status': 'PASS', 'row_count': 3, 'null_customer_id': None, 'negative_amount_rows': 0}}
+2025-11-26 14:19:48,469 [INFO] Total pipeline time: 58.81 seconds
+2025-11-26 14:19:48,469 [INFO] Performance metrics saved to C:\Users\samhi\etl_automation_mysql\reports\performance_metrics_20251126_141948.json and C:\Users\samhi\etl_automation_mysql\reports\performance_metrics_latest.json
+2025-11-26 14:19:48,469 [INFO] === Performance summary ===
+2025-11-26 14:19:48,469 [INFO]   dbt_run              : 10.49 s
+2025-11-26 14:19:48,469 [INFO]   dbt_test             : 11.30 s
+2025-11-26 14:19:48,469 [INFO]   ge_src_orders        : 12.55 s
+2025-11-26 14:19:48,469 [INFO]   ge_stg_orders        : 11.79 s
+2025-11-26 14:19:48,469 [INFO]   ge_fct_orders        : 12.62 s
+2025-11-26 14:19:48,469 [INFO]   total_pipeline       : 58.81 s
+2025-11-26 14:19:48,469 [INFO] \U0001f389 Pipeline completed successfully (status=True).

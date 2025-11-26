@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fct_orders_summary
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+      - name: total_orders
+        tests:
+          - not_null
+      - name: total_amount
+        tests:
+          - not_null

@@ -1,0 +1,20 @@
+{
+  "src_orders": {
+    "status": "PASS",
+    "row_count": 4,
+    "null_customer_id": 0,
+    "negative_amount_rows": 0
+  },
+  "stg_orders": {
+    "status": "PASS",
+    "row_count": 4,
+    "null_customer_id": 0,
+    "negative_amount_rows": 0
+  },
+  "fct_orders_summary": {
+    "status": "PASS",
+    "row_count": 3,
+    "null_customer_id": null,
+    "negative_amount_rows": 0
+  }
+}
