@@ -1,0 +1,9 @@
+name: src_orders_checkpoint
+config_version: 1
+class_name: SimpleCheckpoint
+
+validations:
+  - batch_request:
+      datasource_name: mysql_src
+      data_asset_name: src_orders
+    expectation_suite_name: src_orders_suite

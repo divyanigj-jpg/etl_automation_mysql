@@ -1,0 +1,21 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "stg_orders_suite",
+  "expectations": [],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "default_data_asset_name",
+          "data_connector_name": "default_runtime_data_connector",
+          "datasource_name": "mysql_src",
+          "limit": 1000
+        },
+        "citation_date": "2025-11-26T06:29:05.074410Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.17.21"
+  }
+}
